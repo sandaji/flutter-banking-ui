@@ -88,20 +88,20 @@ class _BankingPaymentHistoryState extends State<BankingPaymentHistory> {
                     fontFamily: fontRegular))
                 .paddingOnly(
                 left: banking_constants.spacingStandardNew, top: banking_constants.spacingStandardNew), // Use prefix to resolve conflict
-            Divider().paddingOnly(
+            const Divider().paddingOnly(
                 left: banking_constants.spacingStandardNew, right: banking_constants.spacingStandardNew), // Use prefix to resolve conflict
             ListView.builder(
               scrollDirection: Axis.vertical,
               itemCount: mList1.length,
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (BuildContext context, int index) => GestureDetector(
                 onTap: () {
                   setState(() {});
                 },
                 child: Row(
                   children: <Widget>[
-                    Icon(Icons.account_balance_wallet,
+                    const Icon(Icons.account_balance_wallet,
                         size: 30, color: Banking_Primary)
                         .paddingOnly(left: nb_utils.spacingStandard.toDouble()),
                     Text(mList1[index].title!,
@@ -180,7 +180,7 @@ class _BankingPaymentHistoryState extends State<BankingPaymentHistory> {
                 },
                 child: Row(
                   children: <Widget>[
-                    Icon(Icons.account_balance_wallet,
+                    const Icon(Icons.account_balance_wallet,
                         size: 30, color: Banking_Primary)
                         .paddingOnly(left: spacingStandard),
                     Text(mList1[index].title!,
@@ -207,13 +207,13 @@ class _BankingPaymentHistoryState extends State<BankingPaymentHistory> {
                     fontFamily: fontRegular))
                 .paddingOnly(
                 left: spacingStandardNew, top: spacingStandardNew),
-            Divider().paddingOnly(
+            const Divider().paddingOnly(
                 left: spacingStandardNew, right: spacingStandardNew),
             ListView.builder(
               scrollDirection: Axis.vertical,
               itemCount: mList1.length,
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (BuildContext context, int index) => GestureDetector(
                 onTap: () {
                   setState(() {});
@@ -221,7 +221,7 @@ class _BankingPaymentHistoryState extends State<BankingPaymentHistory> {
                 child: Container(
                     child: Row(
                       children: <Widget>[
-                        Icon(Icons.account_balance_wallet,
+                        const Icon(Icons.account_balance_wallet,
                             size: 30, color: Banking_Primary)
                             .paddingOnly(left: spacingStandard),
                         Text(mList1[index].title!,

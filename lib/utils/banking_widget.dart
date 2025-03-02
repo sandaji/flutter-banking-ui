@@ -217,7 +217,7 @@ class EditTextState extends State<EditText> {
   }
 }
 
-Widget headerView(var title, double height, BuildContext context, dynamic nb_utils) {
+Widget headerView(var title, double height, BuildContext context, dynamic nbUtils) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
@@ -234,7 +234,7 @@ Widget headerView(var title, double height, BuildContext context, dynamic nb_uti
               left: banking_constant.spacingStandard,
               right: banking_constant.spacingStandardNew,
               top: banking_constant.spacingStandardNew,
-              bottom: nb_utils.SpacingStandard),
+              bottom: nbUtils.SpacingStandard),
         ],
       ),
       Text(title,

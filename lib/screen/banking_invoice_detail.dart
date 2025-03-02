@@ -37,7 +37,7 @@ class _BankingInvoiceDetailState extends State<BankingInvoiceDetail> {
                 .paddingOnly(
                     left: spacingStandardNew, top: spacingStandardNew),
             16.height,
-            BankingSliderWidget(),
+            const BankingSliderWidget(),
             Text("Invoice Mar 2020",
                     style: secondaryTextStyle(
                         color: Banking_TextColorSecondary,

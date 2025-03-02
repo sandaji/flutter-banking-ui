@@ -22,10 +22,10 @@ class BankingDashboard extends StatefulWidget {
 class _BankingDashboardState extends State<BankingDashboard> {
   var selectedIndex = 0;
   var pages = [
-    BankingHome1(),
+    const BankingHome1(),
     const BankingTransfer(),
     const BankingPayment(),
-    BankingSaving(),
+    const BankingSaving(),
     const BankingMenu(),
   ];
 

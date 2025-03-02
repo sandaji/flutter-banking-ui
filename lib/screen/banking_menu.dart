@@ -87,14 +87,14 @@ class _BankingMenuState extends State<BankingMenu> {
                   bankingOption(Banking_ic_security,
                           Banking_lbl_Change_Password, Banking_pinkColor)
                       .onTap(() {
-                    BankingChangePassword().launch(context);
+                    const BankingChangePassword().launch(context);
                   }),
                   bankingOption(
                           Banking_ic_Share,
                           Banking_lbl_Share_Information_account,
                           Banking_greenLightColor)
                       .onTap(() {
-                    BankingShareInformation().launch(context);
+                    const BankingShareInformation().launch(context);
                   }),
                 ],
               ),
@@ -110,17 +110,17 @@ class _BankingMenuState extends State<BankingMenu> {
                   bankingOption(
                           Banking_ic_News, Banking_lbl_News, Banking_blueColor)
                       .onTap(() {
-                    BankingNews().launch(context);
+                    const BankingNews().launch(context);
                   }),
                   bankingOption(Banking_ic_Chart, Banking_lbl_Rate_Information,
                           Banking_greenLightColor)
                       .onTap(() {
-                    BankingRateInfo().launch(context);
+                    const BankingRateInfo().launch(context);
                   }),
                   bankingOption(Banking_ic_Pin, Banking_lbl_Location,
                           Banking_greenLightColor)
                       .onTap(() {
-                    BankingLocation().launch(context);
+                    const BankingLocation().launch(context);
                   }),
                   10.height,
                 ],
@@ -149,7 +149,7 @@ class _BankingMenuState extends State<BankingMenu> {
                   bankingOption(Banking_ic_Call, Banking_lbl_Contact,
                           Banking_blueColor)
                       .onTap(() {
-                    BankingContact().launch(context);
+                    const BankingContact().launch(context);
                   }),
                   const SizedBox(
                     height: spacingMiddle,

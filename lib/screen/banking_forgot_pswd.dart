@@ -61,7 +61,7 @@ class _BankingForgotPasswordState extends State<BankingForgotPassword> {
                       style:
                           secondaryTextStyle(size: 16, fontFamily: fontMedium),
                     ).onTap(() {
-                      BankingResend().launch(context);
+                      const BankingResend().launch(context);
                     }),
                   ),
                   16.height,
